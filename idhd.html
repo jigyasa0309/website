@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>mywebsite</title>
+<link rel ="stylesheet" href="t.css">
+<link rel="stylesheet" href="side.css">
+</head>
+<body>
+<div class="topnav">
+<h1 CLASS="myDiv">NURSERY LIVE</H1>
+<p><img src="C:\Users\Jigyasa Yadav\Desktop\day4\logo.png"  width="50" height="50">
+</p>
+
+
+  <div class="login-container">
+   
+      <button class ="open-button" onclick="openForm()" type="submit">Login</button>
+<button type="submit">SignUP</button>
+  </div>
+</div>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html" target="BLANK">Home</a>
+    <a href="ABOUTUS.HTML" target="BLANK">About Us</a>
+    <a href="CONTACTUS.HTML" target="BLANK">Contact</a>
+  </div>
+  
+  
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()"></span>&#9776;
+ <h2 style="text-align:center; color:#009900; font-family:fantasy;font-size:200%;"><i><u>Welcome to the world of Plants</u></i></h2>
+<div class="boxfixed">
+<br>
+<p STYLE="TEXT-ALIGN:JUSTIFY; color:#66FF00; font-family:cursive;font-size:180%; margin:20;">
+Nurserylive germinated in 2014 from a promise to make ‘green and healthy’ a click away for all Indians
+
+Having plants in our homes or in our offices doesn’t just look good, it also boosts our mood, makes us more productive, and cleans the air around us by absorbing toxins
+
+Most of us being urban dwellers spending their days in apartments with limited access to parks and ecological reserves, have no way of feeling close to nature and experiencing the benefits of being around plants.
+
+Ordering a pizza is easy but ever heard of ordering a plant to your doorstep? 
+<br>
+This is where nurserylive comes in.</P>
+<BR>
+<BR>
+<P STYLE= "TEXT-ALIGN:RIGHT; color:WHITE;font-family:courier;font-size:160%;">
+We believe that Green is Good and are here to enable Indians to access plants in the easiest way possible – online! We are here to shape the future of gardening!
+
+A one-stop-shop for all gardening related requirements, nurserylive has more than 6000 products available online for delivery across India saving you numerous messy trips to various nurseries.</P>
+<BR>
+</div>
+<br>
+<div class="flex">
+      <img src ="C:\Users\Jigyasa Yadav\Desktop\day4\p.2.jpg"  />
+      <img src = "C:\Users\Jigyasa Yadav\Desktop\day4\p.1.jpg"  />
+<img src ="C:\Users\Jigyasa Yadav\Desktop\day4\p.4.jpg"  />
+     <img src = "C:\Users\Jigyasa Yadav\Desktop\day4\p.1.jpg"  />
+<img src ="C:\Users\Jigyasa Yadav\Desktop\day4\p.2.jpg"  />
+</div>
+<P STYLE= "TEXT-ALIGN:center; color:#CCFF00;font-family:cursive;font-size:120%;">
+Plants, simplified: Order plants ready to be placed in your home, office or garden. Just Unpack, Relax and Enjoy your green buddies
+Secure Shipping: Our unique packaging will hold the plants in place and let the plant breathe so that it reaches you fresh without any mess.
+Detailed Guidance: Get detailed plant care instructions from the website as well as real-time guidance from our Garden Experts on Whatsapp.</p>
+<hr/>
+
+
+<div class="made-with-love">
+  Made by:-Jigyasa
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+   
+
+
+</body>
+</html

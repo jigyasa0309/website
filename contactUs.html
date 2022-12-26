@@ -1,0 +1,303 @@
+<html>
+<head>
+<title>Nurserylive</title>
+<link rel="stylesheet" href="t.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="side.css">
+</head>
+<body>
+  <!--for topnavigation bar-->
+<div class="topnav">
+<h1 CLASS="myDiv">NURSERY LIVE</H1>
+<img class="round" src="C:\Users\Jigyasa Yadav\Desktop\day4\logo.png"  width="50" height="50">
+<!--for popup-->
+  <div class="login-container">
+    <button class ="open-button" onclick="openLoginForm()" type="submit">Login</button>
+    <button type="submit" class ="open-button" onclick="openSingupForm()">SignUP</button>
+    
+  </div>
+</div>
+<div class="form-popup" id="myForm">
+  <form action="login.html" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+  </form>
+</div>
+<div class="form-popup" id="signupForm">
+  <form action="signup.html" class="form-container">
+    <h1>SignUp</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="cpsw" required>
+    <button type="submit" class="btn">SignUp</button>
+  </form>
+</div>
+
+<!--for side navigation bar-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+ <h2 style="text-align:center; color:#009900; font-family:fantasy;font-size:200%;"><i><u>FOR ENQUIRY</u></i></h2>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html" target="BLANK">Home</a>
+  <a href="ABOUTUS.HTML" target="BLANK">About Us</a>
+  <a href="CONTACTUS.HTML" target="BLANK">Contact</a>
+</div>
+</div>
+<br>
+<!--for the marquee line-->
+<marquee STYLE="font-size:100%; color:#CCFF00;font-family:cursive;" >
+fill the form to get in touch with us!!  fill the form to get in touch with us!!
+</marquee>
+<hr/>
+<P STYLE= "TEXT-ALIGN:RIGHT; color:WHITE;font-family:courier;font-size:160%;">
+  We believe that Green is Good and are here to enable Indians to access plants in the easiest way possible – online! We are here to shape the future of gardening!
+  A one-stop-shop for all gardening related requirements, nurserylive has more than 6000 products available online for delivery across India saving you numerous messy trips to various nurseries.</P>
+  <BR>
+
+<!--for form -->
+<div class="formcenter">
+<div class="container">
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
+<!-- Text input name-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Name:</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="Enter Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+<br>
+<!-- Text input email -->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Text input- phone-->      
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="+9142449546546" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<br>
+<!-- Text input address-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Address</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Address" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<br>
+<!-- Text input city -->
+ 
+<div class="form-group">
+  <label class="col-md-4 control-label">City</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="city" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+<br>
+<!-- Select Basic country -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Country</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Select your country</option>
+      <option>Alabama</option>
+      <option>Alaska</option>
+      <option >Colorado</option>
+      <option >District of Columbia</option>
+      <option> Florida</option>
+      <option >Hawaii</option>
+      <option >daho</option>
+      <option >India</option>
+      <option >Iowa</option>
+      <option >Kentucky</option>
+      <option >Louisiana</option>
+      <option >Minnesota</option>
+      <option>Mississippi</option>
+      <option>Missouri</option>
+      <option>Montana</option>
+      <option>New York</option>
+      <option>North Carolina</option>
+      <option>North Dakota</option>
+      <option>South Dakota</option>
+      <option>Tennessee</option>
+      <option>Texas</option>
+      <option> Uttah</option>
+      <option>Vermont</option>
+      <option>Virginia</option>
+      <option >Washington</option>
+      <option >West Virginia</option>
+    </select>
+  </div>
+</div>
+</div>
+<br>
+<!-- Text input zip code-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Zip Code</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+<br>
+<!-- Text input reuirement-->
+<div class="form-group">
+  <label class="col-md-4 control-label">YOUR REQUIREMENT</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="website" placeholder="YOUR REQUIREMENT" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<br>
+<div class="date">
+<label for="Date"> Enter date:</label><br>
+  <input type="date" id="date" name="Date">
+</div>
+<!-- radio checks for gender -->
+ <div class="form-group">
+                        <label class="col-md-4 control-label">GENDER</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="MALE" /> Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="FEMALE" /> No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+<br>
+<!-- Text area enquiry  -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Enquiry:</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+          <textarea class="form-control" name="comment" placeholder="Enquiry"></textarea>
+  </div>
+  </div>
+</div>
+<br>
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message"> Thanks for contacting us, we will get back to you shortly.</div>
+<br>
+<!-- Button post and clear-->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Post <span class="glyphicon glyphicon-send"></span></button>
+<button type="Clear" class="btn btn-warning" >Clear <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+  <br>
+</div>
+<br>
+</fieldset>
+</form>
+<br>
+</div>
+<br>
+</div>
+<br>
+<br>
+<hr/>
+<!--for name and icon in footer-->
+<div class="made-with-love">
+  <ul class="wrapper">
+    <li class="icon facebook">
+      <span class="tooltip">Facebook</span>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+      <span class="tooltip">Twitter</span>
+      <span><i class="fab fa-twitter"></i></span>
+    </li>
+    <li class="icon instagram">
+      <span class="tooltip">Instagram</span>
+      <span><i class="fab fa-instagram"></i></span>
+    </li>
+    <li class="icon youtube">
+      <span class="tooltip">Youtube</span>
+      <span><i class="fab fa-youtube"></i></span>
+    </li>
+  </ul>
+  <br>
+  All @copyrights reserved.<br>
+  Made by:-Jigyasa
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function openLoginForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeLoginForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openSingupForm() {
+  document.getElementById("signupForm").style.display = "block";
+}
+
+</script>
+   
+
+
+</body>
+</html
